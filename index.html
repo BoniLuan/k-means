@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-means e Knn</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/style/css/style.css">
+</head>
+<body>
+    <nav>
+        <div>
+            <h1>K-MEANS</h1>
+        </div>
+    </nav>
+
+    <main>
+        <div id="content">
+            <div>
+                <label>k:</label>
+                <input type="number" name="k" id="k" min="1" value="3">
+            </div>
+            <label>Escolha o arquivo</label>
+            <input type="file" id="csv"/>
+            <div>
+                <label>Escolha o delimitador:</label>
+                <select id="delimiter">
+                    <option id="comma" value=",">,</option>
+                    <option id="dotcomma" value=";">;</option>
+                    <option id="pipe" value="|">|</option>
+                </select>
+            </div>
+            <button id="convert" onclick="csvToJson()">Convert</button>
+        </div>
+        <div id="result">
+        </div>
+    </main>
+
+    <footer>
+        <div>
+
+        </div>
+    </footer>
+</body>
+<script src="assets/script/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.8.0/chart.min.js" integrity="sha512-sW/w8s4RWTdFFSduOTGtk4isV1+190E/GghVffMA9XczdJ2MDzSzLEubKAs5h0wzgSJOQTRYyaz73L3d6RtJSg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.plot.ly/plotly-2.12.1.min.js"></script>
+<script src="assets/script/convert.js"></script>
+<script src="assets/script/kmeans.js"></script>
+</html>
